@@ -7,13 +7,15 @@
 
 import UIKit
 
-class PersonsTableViewController: UITableViewController {
+final class PersonsTableViewController: UITableViewController {
     
-    let persons = DataStore.getPersons()
+    var persons: [Person]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.backButtonTitle = "Back"
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
