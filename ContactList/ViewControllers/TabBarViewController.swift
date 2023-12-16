@@ -30,6 +30,5 @@ final class TabBarViewController: UITabBarController {
                 }
             }
         }
-        
     }
 }

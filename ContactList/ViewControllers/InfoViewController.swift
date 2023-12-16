@@ -19,6 +19,4 @@ final class InfoViewController: UIViewController {
         phone.text = person.phone
         email.text = person.email
     }
-    
-
 }
