@@ -16,7 +16,7 @@ final class TabBarViewController: UITabBarController {
     }
     
     private func sendData() {
-        guard let viewControllers = self.viewControllers else { return }
+        guard let viewControllers = viewControllers else { return }
         
         for viewController in viewControllers {
             if let navigationVC = viewController as? UINavigationController {
