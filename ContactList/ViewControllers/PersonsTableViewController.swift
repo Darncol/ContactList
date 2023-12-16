@@ -15,16 +15,17 @@ class PersonsTableViewController: UITableViewController {
         super.viewDidLoad()
 
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let infoVC = segue.destination as? InfoViewController else { return }
+        infoVC.person = persons[tableView.indexPathForSelectedRow!.row]
     }
 
+}
+
+// MARK: - Table view data source
+extension PersonsTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return persons.count
     }
  
@@ -34,9 +35,7 @@ class PersonsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FullName", for: indexPath)
         var content = cell.defaultContentConfiguration()
         content.text = person.fullName
-        
         cell.contentConfiguration = content
         return cell
     }
-
 }

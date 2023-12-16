@@ -94,8 +94,8 @@
 		88B0F76E2B2DCDA0009F5944 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				88B0F7642B2DCD41009F5944 /* InfoViewController.swift */,
 				88B0F7652B2DCD41009F5944 /* PersonsTableViewController.swift */,
+				88B0F7642B2DCD41009F5944 /* InfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
