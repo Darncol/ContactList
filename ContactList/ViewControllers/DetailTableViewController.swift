@@ -26,25 +26,38 @@ final class DetailTableViewController: UITableViewController {
         let person = persons[indexPath.section]
         
         if indexPath.row == 0 {
-            let phoneCell = tableView.dequeueReusableCell(withIdentifier: "phoneCell", for: indexPath)
-            var content = phoneCell.defaultContentConfiguration()
-            content.text = person.phone
-            content.image = UIImage(systemName: "phone")
-            phoneCell.contentConfiguration = content
-            
-            return phoneCell
+            return createCell(
+                for: "phoneCell",
+                image: "phone",
+                text: person.phone,
+                indexPath: indexPath
+            )
         } else {
-            let emailCell = tableView.dequeueReusableCell(withIdentifier: "emailCell", for: indexPath)
-            var content = emailCell.defaultContentConfiguration()
-            content.text = person.email
-            content.image = UIImage(systemName: "tray")
-            emailCell.contentConfiguration = content
-            
-            return emailCell
+            return createCell(
+                for: "emailCell",
+                image: "tray",
+                text: person.email,
+                indexPath: indexPath
+            )
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    private func createCell(
+        for identifier: String,
+        image: String,
+        text: String,
+        indexPath: IndexPath
+    ) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        content.text = text
+        content.image = UIImage(systemName: image)
+        cell.contentConfiguration = content
+        
+        return cell
     }
 }
