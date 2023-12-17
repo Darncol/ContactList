@@ -45,19 +45,4 @@ final class DetailTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-    private func createCell(
-        for identifier: String,
-        image: String,
-        text: String,
-        indexPath: IndexPath
-    ) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
-        var content = cell.defaultContentConfiguration()
-        content.text = text
-        content.image = UIImage(systemName: image)
-        cell.contentConfiguration = content
-        
-        return cell
-    }
 }

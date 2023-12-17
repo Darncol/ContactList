@@ -30,11 +30,7 @@ extension PersonsTableViewController {
  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let person = persons[indexPath.row]
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FullName", for: indexPath)
-        var content = cell.defaultContentConfiguration()
-        content.text = person.fullName
-        cell.contentConfiguration = content
-        return cell
+    
+        return createCell(for: "FullName", text: person.fullName, indexPath: indexPath)
     }
 }

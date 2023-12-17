@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		883586122B2F133600DFF435 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883586112B2F133600DFF435 /* Extensions.swift */; };
 		88B0E6642B2E1BFA00FBA36E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B0E6632B2E1BFA00FBA36E /* TabBarViewController.swift */; };
 		88B0E6662B2E1EF800FBA36E /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B0E6652B2E1EF800FBA36E /* DetailTableViewController.swift */; };
 		88B0F7512B2DCCBC009F5944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B0F7502B2DCCBC009F5944 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		883586112B2F133600DFF435 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		88B0E6632B2E1BFA00FBA36E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		88B0E6652B2E1EF800FBA36E /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		88B0F74D2B2DCCBC009F5944 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 			children = (
 				88B0F7662B2DCD41009F5944 /* Model.swift */,
 				88B0F7672B2DCD42009F5944 /* Services.swift */,
+				883586112B2F133600DFF435 /* Extensions.swift */,
 				88B0F76E2B2DCDA0009F5944 /* ViewControllers */,
 				88B0F76C2B2DCD5D009F5944 /* Storyboards */,
 				88B0F76D2B2DCD75009F5944 /* App */,
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88B0F76A2B2DCD42009F5944 /* Model.swift in Sources */,
+				883586122B2F133600DFF435 /* Extensions.swift in Sources */,
 				88B0F76B2B2DCD42009F5944 /* Services.swift in Sources */,
 				88B0F7692B2DCD42009F5944 /* PersonsTableViewController.swift in Sources */,
 				88B0F7512B2DCCBC009F5944 /* AppDelegate.swift in Sources */,
