@@ -17,8 +17,8 @@
 		88B0F75D2B2DCCBE009F5944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B0F75B2B2DCCBE009F5944 /* LaunchScreen.storyboard */; };
 		88B0F7682B2DCD42009F5944 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B0F7642B2DCD41009F5944 /* InfoViewController.swift */; };
 		88B0F7692B2DCD42009F5944 /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B0F7652B2DCD41009F5944 /* PersonsTableViewController.swift */; };
-		88B0F76A2B2DCD42009F5944 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B0F7662B2DCD41009F5944 /* Model.swift */; };
-		88B0F76B2B2DCD42009F5944 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B0F7672B2DCD42009F5944 /* Services.swift */; };
+		88B0F76A2B2DCD42009F5944 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B0F7662B2DCD41009F5944 /* Person.swift */; };
+		88B0F76B2B2DCD42009F5944 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B0F7672B2DCD42009F5944 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		88B0F75E2B2DCCBE009F5944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B0F7642B2DCD41009F5944 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		88B0F7652B2DCD41009F5944 /* PersonsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
-		88B0F7662B2DCD41009F5944 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		88B0F7672B2DCD42009F5944 /* Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		88B0F7662B2DCD41009F5944 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		88B0F7672B2DCD42009F5944 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +49,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88A520BD2B3055C700C4BF03 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				88B0F7672B2DCD42009F5944 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		88A520BE2B3055D100C4BF03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				88B0F7662B2DCD41009F5944 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		88A520BF2B3055E600C4BF03 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				883586112B2F133600DFF435 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		88B0F7442B2DCCBC009F5944 = {
 			isa = PBXGroup;
 			children = (
@@ -68,9 +92,9 @@
 		88B0F74F2B2DCCBC009F5944 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				88B0F7662B2DCD41009F5944 /* Model.swift */,
-				88B0F7672B2DCD42009F5944 /* Services.swift */,
-				883586112B2F133600DFF435 /* Extensions.swift */,
+				88A520BE2B3055D100C4BF03 /* Models */,
+				88A520BD2B3055C700C4BF03 /* Services */,
+				88A520BF2B3055E600C4BF03 /* Extensions */,
 				88B0F76E2B2DCDA0009F5944 /* ViewControllers */,
 				88B0F76C2B2DCD5D009F5944 /* Storyboards */,
 				88B0F76D2B2DCD75009F5944 /* App */,
@@ -180,9 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88B0F76A2B2DCD42009F5944 /* Model.swift in Sources */,
+				88B0F76A2B2DCD42009F5944 /* Person.swift in Sources */,
 				883586122B2F133600DFF435 /* Extensions.swift in Sources */,
-				88B0F76B2B2DCD42009F5944 /* Services.swift in Sources */,
+				88B0F76B2B2DCD42009F5944 /* DataStore.swift in Sources */,
 				88B0F7692B2DCD42009F5944 /* PersonsTableViewController.swift in Sources */,
 				88B0F7512B2DCCBC009F5944 /* AppDelegate.swift in Sources */,
 				88B0E6662B2E1EF800FBA36E /* DetailTableViewController.swift in Sources */,

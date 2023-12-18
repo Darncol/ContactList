@@ -15,7 +15,7 @@ final class PersonsTableViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.backButtonTitle = "Back"
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let infoVC = segue.destination as? InfoViewController else { return }
         infoVC.person = persons[tableView.indexPathForSelectedRow!.row]

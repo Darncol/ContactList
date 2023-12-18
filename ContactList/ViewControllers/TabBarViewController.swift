@@ -8,7 +8,6 @@
 import UIKit
 
 final class TabBarViewController: UITabBarController {
-    private let persons = DataStore.getPersons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +15,8 @@ final class TabBarViewController: UITabBarController {
     }
     
     private func sendData() {
+        let persons = Person.getPersons()
+        
         guard let viewControllers = viewControllers else { return }
         
         for viewController in viewControllers {
